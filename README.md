@@ -10,8 +10,8 @@
 
 
 （3）上传大于25MB文件的关键步骤：在传输界面进入 git Bash中
-
-     git branch -m master main   ##进入main分支环境中去  git分支从master 中转换到main 分支中
+ git config --global --add safe.directory '%%%当前文件路径'
+ git branch -m master main   ##进入main分支环境中去  git分支从master 中转换到main 分支中
 #创建本地仓库环境
 git init 
  
@@ -25,7 +25,7 @@ git lfs track *
 git add .gitattributes 
  
 #建立git push origin master  
-git remote add origin git@github.com:zhangbeibei00/git_test.git  #上传属性文件
+git remote add origin git@github.com:zhangbeibei00/git_test.git  #上传属性文件具体的库的密钥 具体查询
  
 #添加要上传的大文件，*表示路径下的所有文件git commit -m "Git LFS commit"#添加大文件上传的说明
 git add *
