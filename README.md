@@ -10,8 +10,9 @@
 
 
 （3）上传大于25MB文件的关键步骤：在传输界面进入 git Bash中
-     git branch -m master main   ##进入main分支环境中去  
-     #创建本地仓库环境
+
+     git branch -m master main   ##进入main分支环境中去  git分支从master 中转换到main 分支中
+#创建本地仓库环境
 git init 
  
 #安装大文件上传应用git lfs
@@ -34,3 +35,14 @@ git add *
 
 #上传大文件
 git push origin master   
+
+(4)#如有提交问题合并冲突问题参见博客
+https://www.cnblogs.com/liangmu66/articles/13479802.html
+
+#正确的解决方法就是将你的仓库和你的gitee合并了，用填充的方法，即：
+git pull --rebase origin master  ##git pull --rebase origin main
+
+#输入上述命令，其中origin代表你的仓库uri，后面的master表示将当前的提交到本地仓库的内容和远程仓库合并；
+再输入如下命令，即可将本地仓库推送到远程仓库：
+git push origin master
+
