@@ -9,7 +9,7 @@
    2.1 ssh -T git@github.com  ##测试SSH密钥是否配置成功
 
 
-（3）上传大于25MB文件的关键步骤：在传输界面进入 git Bash中
+（3）上传大于25MB文件的关键步骤：在传输界面进入 git Bash中     ##知乎完整https://zhuanlan.zhihu.com/p/374650864
  git config --global --add safe.directory '%%%当前文件路径'
  git branch -m master main   ##进入main分支环境中去  git分支从master 中转换到main 分支中
 #创建本地仓库环境
